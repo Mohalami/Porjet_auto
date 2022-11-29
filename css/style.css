@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 html,
 body {
     height: 100%;
+    margin: 0;
 }
 
 nav {
@@ -35,7 +31,8 @@ nav {
 }
 
 .nr-content div {
-    background-color: white border-radius: .45rem;
+    background-color: white;
+    border-radius: .45rem;
     color: white;
 }
 
@@ -79,4 +76,8 @@ footer {
     width: 50%;
     gap: 2rem;
     align-items: center;
+}
+
+figcaption {
+    text-align: center;
 }
