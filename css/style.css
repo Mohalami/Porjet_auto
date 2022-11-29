@@ -19,6 +19,29 @@ main .description{
     line-height: 0;
 }
 
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: x-large;
+    height: 30px;
+    width: 250px;
+}
+
+#bouton_prix{
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    cursor: pointer;
+}
+
+#bouton_prix:hover{
+background-color: beige;   
+}
+
 main .Selection{
     display: flex;
     justify-content: center;
@@ -35,12 +58,12 @@ flex-wrap: wrap;
 }
 
 .img_selection figure>img{
-    width:460px
+    width:390px
 }
 
 .img_selection>figure{
     margin:0;
-    padding-left: 10px;
+    padding-left: 20px;
 
 }
 
