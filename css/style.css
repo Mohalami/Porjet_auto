@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 body,html{
     margin: 0;
+    padding: 0;
 }
 
 main{
@@ -15,14 +19,16 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
-
 main>.Image{
- 
+    display: flex;
 }
 
 main>.Video{
+    display: flex;
+    padding-top: 50px;
 
 }
 
@@ -31,6 +37,10 @@ main .description{
     padding-top: 10px;
     margin: 0;
     line-height: 0;
+}
+
+main .description h2 {
+    white-space: nowrap;
 }
 
 .bouton{
@@ -93,3 +103,27 @@ main>article:nth-child(2){
     flex-direction: column;
 }
 
+
+.Image img {
+    width: 100%;
+object-fit: contain;
+aspect-ratio: 3/2;
+}
+
+.Video {
+
+}
+
+
+@media screen and ( max-width: 635px) {
+    .Video {
+        width: 100%;
+    }
+    .Video iframe {
+        width: 100%;
+    }
+    
+    .img_selection figure > img {
+        width: 95%;
+    }
+}
