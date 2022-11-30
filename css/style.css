@@ -222,6 +222,15 @@ textarea {
     justify-content: flex-end;
 }
 
+.form-but button {
+    padding: 10px 18px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    background-color: rgba(56, 56, 56, 0.8);
+    color: #FDD20B;
+}
+
 
 
 /* .....Fin contact style..... */
