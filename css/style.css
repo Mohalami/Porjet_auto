@@ -85,8 +85,14 @@ display: flex;
 flex-wrap: wrap;
 }
 
+.img_selection figure:hover{
+    opacity: 0.8;
+transform: scale(1.05);
+transition: 0.2s ease-in-out all;
+}
+
 .img_selection figure>img{
-    width:390px
+    width:390px   
 }
 
 .img_selection>figure{
@@ -96,13 +102,13 @@ flex-wrap: wrap;
 
 .img_selection figure{
     color: #FDD20B;
+    
 }
 
 main>article:nth-child(2){
     display: flex;
     flex-direction: column;
 }
-
 
 .Image img {
     width: 100%;
@@ -127,3 +133,4 @@ aspect-ratio: 3/2;
         width: 95%;
     }
 }
+
