@@ -3,19 +3,32 @@ body,html{
 }
 
 main{
-    background-color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(56, 56, 56);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FDD20B;
 }
 
-main>article{
-    display: flex;
-
+#boboche{
     font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+main>.Image{
+ 
+}
+
+main>.Video{
+
 }
 
 main .description{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    padding-top: 10px;
     margin: 0;
     line-height: 0;
 }
@@ -30,11 +43,10 @@ main .description{
 }
 
 #bouton_prix{
-    border: 1px solid rgb(221, 219, 219);
+    border: 1px solid #FDD20B;
     border-radius: 5px;
-    background-color:rgb(255, 255, 101);
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(121, 118, 118);
+    color: #FDD20B;
     font-size: large;
     cursor: pointer;
     margin-top: 10px;
@@ -54,7 +66,8 @@ main .Selection{
     display: flex;
     justify-content: center;
     font-size: larger;
-    background-color: rgb(255, 255, 101);
+    color: black;
+    background-color: #FDD20B;
 }
 
 .img_selection{
@@ -69,7 +82,10 @@ flex-wrap: wrap;
 .img_selection>figure{
     margin:0;
     padding-left: 20px;
+}
 
+.img_selection figure{
+    color: #FDD20B;
 }
 
 main>article:nth-child(2){
