@@ -9,6 +9,7 @@ main{
 
 main>article{
     display: flex;
+
     font-size: large;
 }
 
@@ -36,18 +37,22 @@ main .description{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
     cursor: pointer;
+    margin-top: 10px;
+    height: 40px;
 }
 
 #bouton_prix:hover{
 background-color: rgba(129, 125, 125, 0.514);   
 }
 
-main .Selection{
+main .CGU{
     display: flex;
     justify-content: center;
 }
 
 main .Selection{
+    display: flex;
+    justify-content: center;
     font-size: larger;
     background-color: rgb(255, 255, 101);
 }
