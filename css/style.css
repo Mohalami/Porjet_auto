@@ -102,7 +102,6 @@ transition: 0.2s ease-in-out all;
 
 .img_selection figure{
     color: #FDD20B;
-    
 }
 
 main>article:nth-child(2){
@@ -115,11 +114,6 @@ main>article:nth-child(2){
 object-fit: contain;
 aspect-ratio: 3/2;
 }
-
-.Video {
-
-}
-
 
 @media screen and ( max-width: 635px) {
     .Video {
