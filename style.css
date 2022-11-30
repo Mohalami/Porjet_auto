@@ -5,7 +5,9 @@ html, body {
 body{
     height: 100%;
 }
-
+main {
+    background-color: rgb(56, 56, 56);
+}
 
 
 .slider-container {
@@ -72,6 +74,7 @@ body{
     justify-content: center;
     background-color: rgb(56, 56, 56);
     padding-bottom: 3%;
+    margin-top: 15%;
 }
 .card {
     position: relative;
