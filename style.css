@@ -1,0 +1,145 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: rgb(56, 56, 56);
+}
+
+/*------ Reset ------ */
+
+/*------ Global ------ */
+
+a{
+    text-decoration: none;
+    color: #FDD20B;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+hr{
+    border:1px solid #FDD20B;
+    width: 80%;
+    margin: 30px auto;
+}
+
+/*------ Structure ------ */
+
+/*------ Header ------ */
+
+/*------ Content ------ */
+
+/*Marques*/
+
+.titre_a{
+    width: 100%;
+    max-width: 300px;
+    margin:0 auto;
+}
+
+@media screen and (min-width:768px){
+
+}
+
+.modele_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+
+    .modele_container{
+       flex-direction: column;
+       width: 100%;
+    }
+}
+
+.car-clickable{
+    width: 100%;
+}
+
+.car-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.alain-img-car{
+    width: 100%;
+    transition: 0.2s ease-in-out all;
+}
+
+.infoproduit{
+    width: 100%;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+
+    .alain-img-car{
+        width: 50%;
+    }
+
+    .infoproduit{
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+
+.alain-img-car:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+    
+}
+
+.detail_car{
+    display: inline-flex;
+}
+@media screen and (min-width:768px){
+    .detail_car{
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+.detail_car > span{
+    margin: 5% auto;
+    font-size: larger;
+}
+@media screen and (min-width:768px){
+    .detail_car > span{
+    margin: 5% 15%;
+    font-size: larger;
+    }
+}
+
+
+
+
+.readmore{
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 5px;
+    background-color:rgb(129, 125, 125, 0.514);
+    color:#FDD20B;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    cursor: pointer;
+    margin: 0 auto;
+    padding:0.5em;
+    height: auto;
+    display: block;
+}
+
+.readmore:hover{
+    background-color: rgba(121, 118, 118);
+}
+
+/*------ Footer ------ */
+
+/*------ Media ------ */
