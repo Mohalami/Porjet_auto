@@ -1,3 +1,5 @@
+/*--------DEBUT-CSS-ALAIN----------*/
+
 body,html{
     padding: 0;
     margin: 0;
@@ -64,6 +66,12 @@ hr{
 
 .car-clickable{
     width: 100%;
+ 
+}
+@media screen and (min-width:768px){
+    .car-clickable{
+    margin-left: 10%;
+    }
 }
 
 .car-container{
@@ -83,6 +91,7 @@ hr{
     display: flex;
     flex-direction: column;
     margin-left: 2%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 @media screen and (min-width:768px){
@@ -119,11 +128,21 @@ hr{
 }
 @media screen and (min-width:768px){
     .detail_car > span{
-    margin: 5% 15%;
+    margin: 2% 10%;
     font-size: larger;
     }
 }
 
+@media screen and (min-width:768px){
+span{
+    background-color: rgb(129, 125, 125, 0.514);
+    padding: 1%;
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+    }
+}
 
 
 
@@ -148,3 +167,5 @@ hr{
 /*------ Footer ------ */
 
 /*------ Media ------ */
+
+/*--------FIN-CSS-ALAIN----------*/
