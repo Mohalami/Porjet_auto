@@ -70,11 +70,35 @@
     </article>
 
     </main>
-
     <footer>
-
-
+        <div class="footdiv">
+            <p>Restons en contact</p>
+            <div class="footlog">
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-linkedin"></i></div>
+                <div><i class="fa-solid fa-envelope"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
+        <div class="footdiv">
+            <p>Nos partenariats</p>
+            <div class="footlog">
+                <div><i class="fa-brands fa-uber"></i></div>
+                <div><i class="fa-brands fa-google-wallet"></i></div>
+            </div>
+        </div>
+        <p style="text-align: center" class="genecond">
+            <a href="#">Conditions génerales de location</a>
+        </p>
     </footer>
+    <script>
+        const menuHamburger = document.querySelector(".menubut")
+        const navLinks = document.querySelector(".navabr-moh")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 
 </body>
 </html>
