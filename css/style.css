@@ -4,7 +4,6 @@
 body,html{
     margin: 0;
     padding: 0;
-    height: 90%;
 }
 
 main{
@@ -128,6 +127,8 @@ aspect-ratio: 3/2;
         width: 95%;
     }
 }
+
+
 
 body {
     background-image: url(../image/Quelle-voiture-choisir-pour-la-montagne.jpg);
