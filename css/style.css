@@ -4,6 +4,7 @@
 body,html{
     margin: 0;
     padding: 0;
+    height: 90%;
 }
 
 main{
@@ -128,3 +129,231 @@ aspect-ratio: 3/2;
     }
 }
 
+body {
+    background-image: url(../image/Quelle-voiture-choisir-pour-la-montagne.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logomoh {
+    height: fit-content;
+    border: 1px transparent #000;
+    border-radius: .45rem;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.logomoh a {
+    text-decoration: none;
+    color: #ed3c57;
+}
+
+.logomoh:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.logomoh a:hover {
+    color: #000;
+}
+
+.navabr-moh .navli {
+    display: flex;
+}
+
+.navli li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navli li a {
+    text-decoration: none;
+    color: #FDD20B;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: .45;
+}
+
+.navli .active {
+    color: #FDD20B;
+}
+
+.navli li a:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: .45rem;
+}
+
+.menubut {
+    position: absolute;
+    width: 40px;
+    top: 45px;
+    right: 50px;
+    display: none;
+
+}
+
+@media screen and (max-width: 900px) {
+    .navabr-moh .navli {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menubut {
+        display: block;
+    }
+
+    .navabr-moh {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: 0.5s;
+    }
+
+    .mobile-menu {
+        margin-left: 0;
+    }
+
+    .navli {
+        align-items: center;
+    }
+
+    .navli li {
+        margin: 25px 0;
+        font-size: 1.2em;
+
+    }
+
+    .navli li a {
+        color: #000;
+        align-items: center;
+    }
+
+    footer {
+        color: #FDD20B;
+    }
+
+    .genecond:hover {
+        border: 1px transparent rgb(22, 21, 21);
+        background-color: #fff;
+        border-radius: .45rem;
+        color: #FDD20B;
+    }
+}
+
+footer {
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: rgba(56, 56, 56, 0.8);
+    width: 100%;
+    opacity: 0.7;
+    color: #FDD20B;
+    ;
+}
+
+footer .footdiv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footdiv .footlog {
+    display: flex;
+    gap: 0.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.genecond {
+    font-weight: bold;
+}
+
+.genecond a {
+    text-decoration: none;
+    text-transform: none;
+    color: #FDD20B;
+}
+
+.genecond:hover {
+    border: 1px transparent rgb(22, 21, 21);
+    background-color: #fff;
+    border-radius: .45rem;
+}
+
+/* .... end index style.... */
+
+/* ......Début contact style..... */
+form h1,
+h2 {
+    justify-items: center;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #FDD20B;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 25.5rem;
+}
+
+.form-cont {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-cont input,
+textarea {
+    border: none;
+    border-radius: .45rem;
+}
+
+.form-but {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.form-but button {
+    padding: 10px 18px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    background-color: rgba(56, 56, 56, 0.8);
+    color: #FDD20B;
+}
+
+
+
+/* .....Fin contact style..... */

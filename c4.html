@@ -8,9 +8,27 @@
     <link rel="icon" type="image/x-icon" href="img/2730378_car_flash_furious_inkcontober_icon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="background-image:none ;">
+
 
 <header>
+    <div class="principal">
+        <div class="logomoh">
+            <a href="index.html">Logo</a>
+        </div>
+        <div class="navabr-moh">
+            <ul class="navli">
+                <li><a class="active" href="index.html">Accueil</a></li>
+                <li><a href="">Nos promos</a></li>
+                <li><a href="">Nos marques</a></li>
+                <li><a href="">Notre histoire</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="/image/menu-btn.png" alt="" class="menubut">
+        </div>
+    </div>
         
 
 
@@ -72,9 +90,36 @@
     </main>
 
     <footer>
+        <div class="footdiv">
+            <p>Restons en contact</p>
+            <div class="footlog">
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-linkedin"></i></div>
+                <div><i class="fa-solid fa-envelope"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
+        <div class="footdiv">
+            <p>Nos partenariats</p>
+            <div class="footlog">
+                <div><i class="fa-brands fa-uber"></i></div>
+                <div><i class="fa-brands fa-google-wallet"></i></div>
+            </div>
+        </div>
+        <p style="text-align: center" class="genecond">
+            <a href="#">Conditions génerales de location</a>
+        </p>
 
+        
 
     </footer>
+    <script>
+        const menuHamburger = document.querySelector(".menubut")
+        const navLinks = document.querySelector(".navabr-moh")
 
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </body>
 </html>
