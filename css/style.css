@@ -10,6 +10,7 @@ main{
     background-color: rgb(56, 56, 56);
     font-family: Arial, Helvetica, sans-serif;
     color: #FDD20B;
+    height: 60%;
 }
 
 #boboche{
@@ -137,10 +138,13 @@ body {
     background-size: cover;
 }
 
+header{ height: 20%;}
+
 .principal {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 20px;
+    padding-left: 50px;
 }
 
 .logomoh {
