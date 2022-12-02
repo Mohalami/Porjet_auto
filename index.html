@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,13 +17,21 @@
     <header>
         <div class="principal">
             <div class="logomoh">
-                <a href="index.html">Logo</a>
+                <a href="index.html"><img src="image/logogroup.png" alt=""></a>
             </div>
             <div class="navabr-moh">
                 <ul class="navli">
                     <li><a class="active" href="index.html">Accueil</a></li>
                     <li><a href="">Nos promos</a></li>
-                    <li><a href="">Nos marques</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Nos Marques</button>
+                        <div class="dropdown-content">
+                            <a href="bmw.html">BMW</a>
+                            <a href="audi.html">AUDI</a>
+                            <a href="citroen.html">CITROEN</a>
+                            <a href="renault.html">RENAULT</a>
+                        </div>
+                    </div>
                     <li><a href="">Notre histoire</a></li>
                     <li><a href="contact.html">Nous contacter</a></li>
                 </ul>
@@ -37,7 +46,6 @@
         <h2 style="text-align: center;">BIENVENUE CHEZ VROOM</h2>
         <p>Location de voitures</p>
     </main>
-
 
     <footer>
         <div class="footdiv">
@@ -57,7 +65,7 @@
             </div>
         </div>
         <p style="text-align: center" class="genecond">
-            <a href="#">Conditions génerales de location</a>
+            <a href="#">Voir conditions génerales de location</a>
         </p>
     </footer>
     <script>
