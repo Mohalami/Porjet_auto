@@ -96,7 +96,7 @@ body {
     }
 
     .principal .logomoh a img {
-        height: 4rem;
+        height: 3rem;
     }
 
     .mobile-menu {
@@ -206,6 +206,10 @@ form {
     font-size: 1rem;
     font-weight: bold;
     color: #000;
+}
+
+.form-conteneur {
+    padding-bottom: 5%;
 }
 
 form .head-form {
