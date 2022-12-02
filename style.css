@@ -40,7 +40,7 @@ main{
 
 
 /*------ Header ------ */
-@media screen and (min-width:768px){
+
 .principal .logomoh a img {
     height: 4rem;
 }
@@ -94,7 +94,7 @@ main{
     height: 60%;
     width: 100%;
     }
-}
+
 
 /*------ Content ------ */
 .dropbtn {
@@ -321,7 +321,8 @@ footer .footdiv {
     border: 1px transparent rgb(22, 21, 21);
     background-color: #fff;
     border-radius: .45rem;
-}
+    }
+
 
 /*------ Media ------ */
 
