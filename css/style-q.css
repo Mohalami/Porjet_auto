@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: rgb(56, 56, 56);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FDD20B;
+    height: 60%;
+}
+
+#boboche {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+main>.Image {
+    display: flex;
+}
+
+main>.Video {
+    display: flex;
+    padding-top: 50px;
+
+}
+
+main .description {
+    display: grid;
+    padding-top: 10px;
+    margin: 0;
+    line-height: 0;
+}
+
+main .description h2 {
+    white-space: nowrap;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: x-large;
+    height: 30px;
+    width: 250px;
+}
+
+#bouton_prix {
+    border: 1px solid #FDD20B;
+    border-radius: 5px;
+    background-color: rgb(121, 118, 118);
+    color: #FDD20B;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 40px;
+}
+
+#bouton_prix:hover {
+    background-color: rgba(129, 125, 125, 0.514);
+}
+
+main .CGU {
+    display: flex;
+    justify-content: center;
+}
+
+main .Selection {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    color: black;
+    background-color: #FDD20B;
+}
+
+.img_selection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img_selection figure:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out all;
+}
+
+.img_selection figure>img {
+    width: 390px
+}
+
+.img_selection>figure {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.img_selection figure {
+    color: #FDD20B;
+}
+
+main>article:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.Image img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}
+
+@media screen and (max-width: 635px) {
+    .Video {
+        width: 100%;
+    }
+
+    .Video iframe {
+        width: 100%;
+    }
+
+    .img_selection figure>img {
+        width: 95%;
+    }
+}
+
+
+
+body {
+    background-image: url(../image/Quelle-voiture-choisir-pour-la-montagne.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 20%;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.logomoh {
+    height: fit-content;
+    border: 1px transparent #000;
+    border-radius: .45rem;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.logomoh a {
+    text-decoration: none;
+    color: #ed3c57;
+}
+
+.logomoh:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.logomoh a:hover {
+    color: #000;
+}
+
+.navabr-moh .navli {
+    display: flex;
+}
+
+.navli li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navli li a {
+    text-decoration: none;
+    color: #FDD20B;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: .45;
+}
+
+.navli .active {
+    color: #FDD20B;
+}
+
+.navli li a:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: .45rem;
+}
+
+.menubut {
+    position: absolute;
+    width: 40px;
+    top: 45px;
+    right: 50px;
+    display: none;
+
+}
+
+@media screen and (max-width: 900px) {
+    .navabr-moh .navli {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menubut {
+        display: block;
+    }
+
+    .navabr-moh {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: 0.5s;
+    }
+
+    .mobile-menu {
+        margin-left: 0;
+    }
+
+    .navli {
+        align-items: center;
+    }
+
+    .navli li {
+        margin: 25px 0;
+        font-size: 1.2em;
+
+    }
+
+    .navli li a {
+        color: #000;
+        align-items: center;
+    }
+
+    footer {
+        color: #FDD20B;
+    }
+
+    .genecond:hover {
+        border: 1px transparent rgb(22, 21, 21);
+        background-color: #fff;
+        border-radius: .45rem;
+        color: #FDD20B;
+    }
+}
+
+footer {
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: rgba(56, 56, 56, 0.8);
+    width: 100%;
+    opacity: 0.7;
+    color: #FDD20B;
+    ;
+}
+
+footer .footdiv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footdiv .footlog {
+    display: flex;
+    gap: 0.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.genecond {
+    font-weight: bold;
+}
+
+.genecond a {
+    text-decoration: none;
+    text-transform: none;
+    color: #FDD20B;
+}
+
+.genecond:hover {
+    border: 1px transparent rgb(22, 21, 21);
+    background-color: #fff;
+    border-radius: .45rem;
+}
+
+/* .... end index style.... */
+
+/* ......Début contact style..... */
+form h1,
+h2 {
+    justify-items: center;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #FDD20B;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 25.5rem;
+}
+
+.form-cont {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-cont input,
+textarea {
+    border: none;
+    border-radius: .45rem;
+}
+
+.form-but {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.form-but button {
+    padding: 10px 18px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    background-color: rgba(56, 56, 56, 0.8);
+    color: #FDD20B;
+}
+
+
+
+/* .....Fin contact style..... */
+
+/* ...ajout du drop ..... */
+.dropbtn {
+    color: #FDD20B;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #FDD20B;
+    border-radius: .45rem;
+    left: -10px;
+    padding: 1.5rem;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+    color: #FDD20B;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+button.dropbtn {
+    background: transparent;
+}
+
+/* ....fin du drop .... */
